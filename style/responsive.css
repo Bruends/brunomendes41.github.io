@@ -1,0 +1,22 @@
+/* tablet */
+@media screen and (max-width: 860px) {
+  
+  
+  .about-container {
+    flex-direction: column;
+    margin: 30px 0;
+  }  
+}
+
+/* mobile */
+@media screen and (max-width: 500px) { 
+  .container {
+    padding: 30px 20px;
+    outline: none;
+  }
+  
+  .photo {
+    width: 130px;
+    height: 130px;
+  }
+}

@@ -1,0 +1,54 @@
+/* initial positions */
+.intro {  
+  opacity: 0;
+  animation: 1.5s fadeInRotate;
+}
+
+.logo-container {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation-name: fadeIn;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.photo-container {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation-name: fadeIn;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.about-resume {
+  opacity: 0;
+  transform: translateX(30px);
+  animation-name: fadeIn;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* animations */
+@keyframes fadeInRotate {
+  from{ 
+    opacity: 0;
+    transform: rotateY(180deg);
+  }
+  
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
