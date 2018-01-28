@@ -24,7 +24,7 @@ a {text-decoration: none;}
   position: relative;
   margin: 0 auto;
   height: 150px;
-  margin-top: calc(50vh - 130px);
+  margin-top: calc(50vh + 75px);
 }
 
 /* main container */
