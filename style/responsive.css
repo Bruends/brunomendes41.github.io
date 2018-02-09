@@ -1,7 +1,5 @@
 /* tablet */
-@media screen and (max-width: 860px) {
-  
-  
+@media screen and (max-width: 860px) {  
   .about-container {
     flex-direction: column;
     margin: 30px 0;
@@ -15,8 +13,17 @@
     outline: none;
   }
   
+  .about-resume {
+    margin-top: 60px;
+  }
+  
   .photo {
     width: 130px;
     height: 130px;
+  }
+
+  .photo-name {
+    bottom: -75px;   
+    font-size: 1.4rem;    
   }
 }

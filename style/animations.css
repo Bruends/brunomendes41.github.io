@@ -1,17 +1,9 @@
 /* initial positions */
 .intro {  
-  opacity: 0;
-  animation: 1.5s fadeInRotate;
+  opacity: 0;  
+  animation: fadeInRotate 1.5s, 2s afterRotate 2.5s forwards;
 }
 
-.logo-container {
-  opacity: 0;
-  transform: translateX(-30px);
-  animation-name: fadeIn;
-  animation-delay: 1.6s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
 
 .photo-container {
   opacity: 0;
@@ -33,14 +25,14 @@
 
 /* animations */
 @keyframes fadeInRotate {
-  from{ 
+  0% {       
     opacity: 0;
     transform: rotateY(180deg);
   }
   
-  to {
+  98% {
     opacity: 1;
-    transform: rotateY(0deg);
+    transform: rotateY(0deg);    
   }
 }
 @keyframes fadeIn {
@@ -50,5 +42,12 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes afterRotate {
+  to {
+    width: 0;
+    height: 0;
   }
 }
