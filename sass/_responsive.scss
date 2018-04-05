@@ -1,0 +1,69 @@
+@include responsive('tablet'){  
+  .header-container {
+    justify-content: space-between;
+    background-color: #222;
+    
+    & * {
+      color: #fff;
+    }      
+  } 
+  
+  .logo-header {
+    display: block;
+    visibility: hidden;
+  }
+  
+  .menu {      
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    top: 84px;
+    left: 0px;
+    border-bottom: 3px solid $detail-color;     
+
+    & li {
+      margin: 15px;
+   
+      & a {
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+    
+  .menu__toggle { 
+    display: block;
+    position: relative;      
+    right: 20px;
+    
+    & a {
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+
+  .menu--active {
+    display: block;      
+  } 
+}
+
+@include responsive('mobile') {
+  .banner-content {
+    top: 120px;
+
+    &__title {
+      font-size: 2.6em;
+    }
+  }
+  
+  .brief-text {
+    font-size: .9rem;
+  }
+
+  .portfolio-bg {
+    background-image: none;    
+  }
+
+}

@@ -1,59 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- tema para tab no chrome de android -->
-  <meta name="theme-color" content="#222" >
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- font roboto -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+  <meta name="theme-color" content="#222222">
   <title>Bruno Mendes</title>
-  <!-- styles -->
-  <link rel="stylesheet" href="dist/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
   
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
-  <div class="intro">
-    <img src="img/logo.png">
-  </div>
-  <main role="main">
-    <section class="container">      
-      <div class="about-container">
-        <div class="photo-container">          
-          <div class="photo">
-            <div class="photo-detail"></div>
-            <h1 class="photo-name"> Bruno Mendes </h1> 
+
+  <!-- MENU -->
+  <header class="header-bg">
+    <div class="header-container container">
+      <div>
+        <a href="#">
+          <div>
+            <img class="logo-header" src="dist/img/logo.png" alt="Logo">
           </div>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#banner" class="menu__link" title="Home">Home</a></li>
+          <li><a href="#about" class="menu__link" title="sobre">Sobre</a></li>
+          <li><a href="#skills" class="menu__link" title="skills">Skills</a></li>
+          <li><a href="#contact" class="menu__link" title="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu__toggle">
+        <a href="#" id="toggle-menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner" id="banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-content__logo">         
+          <img class="banner-content__logo-img" src="dist/img/logo.png" alt="Logo">        
         </div>
 
-        <article class="about-resume">
-          <h2>Sobre</h2>
-          <div class="about-text">
-              <p>
-                Hey o/, me chamo <span class="highlight-text">Bruno Mendes</span>, sou formado em Análise e desenvolvimento de sistemas, onde descobri minha paixão por desenvolvimento web. Hoje foco meus estudos em <span class="highlight-text">PHP, NodeJS e React </span>, &nbsp; mas sempre com mente aberta para novas tecnologias. Atualmente estou à procura de uma oportunidade para iniciar minha carreira e principalmente evoluir a cada dia mais como desenvolvedor!
-              </p>
-              <br>
-              <p>
-                email: brunomendes962@gmail.com
-              </p>
-          </div>
-          <div class="about-contact">
-            <a href="docs/curriculo.pdf" title="currículo">
-              <i class="fa fa-file-pdf-o"></i>
-            </a>
-            <a href="https://github.com/BrunoMendes41" title="github">
-              <i class="fa fa-github"></i>
-            </a>
-            <a href="https://codepen.io/BrunoMendes41/" title="codepen">
-              <i class="fa fa-codepen"></i>
-            </a>            
-          </div>
-        </article>
+        <h1 class="banner-content__title">
+          Bruno Mendes
+        </h1>
+        <h2 class="banner-content__subtitle">
+          Desenvolvedor Web
+        </h2>
+
+        <i class="arrow fa fa-angle-down" aria-hidden="true"></i>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about-bg bg" id="about">
+    <div class="about-container container">
+      <article class="brief">
+        <h2 class="brief__title">Sobre</h2>
+        <p class="brief__text">
+          Hey o/, me chamo Bruno Mendes, sou formado em Análise e desenvolvimento de sistemas, onde descobri minha paixão por desenvolvimento web. Hoje foco meus estudos em PHP, NodeJS e React,  &nbsp;mas sempre com mente aberta para novas tecnologias. Atualmente estou à procura de uma oportunidade para iniciar minha carreira e principalmente evoluir a cada dia mais como desenvolvedor!
+        </p>
+      </article>
+
+      <!-- foto -->
+      <div class="info">
+        <div class="info__photo"></div>   
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills-bg bg" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        
+        <h3 class="skill-item__title">
+         Front-End
+        </h3>
+        <ul class="skill-item__list">
+          <li> Javascript </li>
+          <li>HTML</li>
+          <li>CSS, SASS</li>
+          <li>GULP</li>
+          <li> React </li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        
+        <h3 class="skill-item__title">
+          Back-End 
+        </h3>
+        <ul class="skill-item__list">
+          <li> Node </li>
+          <li> PHP </li>
+          <li> Wordpress </li>
+          <li> MySql </li>
+          <li> MongoDB </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <h3>Contato</h3>
+    <div class="social-cotainer">
+      <a href="https://github.com/brunomendes41" title="github" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://codepen.io/BrunoMendes41/#" title="codepen" target="_blank">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+      </a>      
+      <a href="dist/docs/BrunoMendesCurriculo.pdf" title="curriculo" target="_blank">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/brunomendes41/" title="linked in" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </div>
+    <p>Email: brunomendes962@gmail.com</p>
+    <small>Desenvolvido por Bruno Mendes</small>
+  </footer>
+  <script src="dist/js/dist.js"></script>
 </body>
 </html>

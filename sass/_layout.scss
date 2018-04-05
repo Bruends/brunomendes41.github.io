@@ -1,0 +1,239 @@
+.header-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.2em;
+  z-index: 1;  
+  font-weight: 500;
+}
+
+// quando o header for fixado com scroll
+.header-bg--fixed {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid $detail_color;
+  transition: .2s;
+  padding: 0 10px;
+  
+  & i {
+    color: #fff; 
+  }
+
+  & a {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  & .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  & .logo-header {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;   
+}
+
+.logo-header {
+  width: 45px;
+  height: 50px;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+
+    &:hover {
+      color: $detail_color;      
+      transition: .2s;
+      text-decoration: underline;
+    }
+  }
+
+  &__toggle {
+    display: none;
+  }
+}
+
+// BANNER
+.banner {
+  position: relative;
+  height: 650px;
+  background-color: #222;
+  background-image: url('../img/banner.jpeg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 150px;
+  padding: 20px;
+
+  &__logo{
+    margin: 0 auto;
+    @include separator;    
+  } 
+
+  &__logo-img {
+    width: 100px;    
+    margin-bottom: 20px;
+    animation: fadeInRotate 2s;
+  }
+
+  &__title {
+    font-size: 4em;    
+    animation: fadeInUp 1s;
+  }
+
+  &__subtitle {
+    font-size: 1.8em;
+    animation: fadeInUp 1s;
+  }
+}
+
+// SOBRE
+.about-container { 
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 180px 0px;  
+}
+
+
+
+.brief {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    @include separator;
+    color: #333;
+  }
+
+  &__text {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 0 10px;
+  }
+}
+
+.info {
+  max-width: 400px;
+  min-width: 300px; 
+  margin-top: 35px;
+
+
+  &__photo {    
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../img/photo.jpg');
+    background-size: cover;   
+    background-position: left top;
+  }
+
+  &__contact {
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.skills-bg{
+  background-color: #222;  
+  background-size: cover;
+  background-attachment: fixed;  
+  position: relative;  
+  padding: 70px 10px; 
+  color: #fff;
+}
+
+.skills-bg h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  @include separator;  
+}
+
+.skills-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;   
+}
+
+.skill-item {
+  flex: 1;
+  min-width: 250px;
+  margin: 50px;
+  text-align: center;
+  border: 2px dashed $detail-color;
+  padding: 50px; 
+
+   &__title {        
+    font-size: 2rem; 
+    @include separator;
+  }
+
+  &__list {
+   font-size: 1.3rem;
+  }
+}
+
+footer{
+  padding: 50px 0;  
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+    
+  h3{
+    text-align: center;
+    @include separator;
+  }  
+}
+.social-cotainer{
+  margin: 15px;
+  
+  a{
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.8em;
+    text-decoration: none;
+        
+    &:hover{
+      color: $detail_color;
+    }
+  }
+}

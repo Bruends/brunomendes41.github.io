@@ -1,0 +1,27 @@
+@keyframes fadeInRotate {
+  from { 
+    opacity: 0;
+    transform: rotateY(180deg);
+   }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+   }
+}
+
+@keyframes fadeInUp {
+  from {
+     opacity: 0;
+     transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceArrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(0px); }
+}

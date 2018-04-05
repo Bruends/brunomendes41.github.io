@@ -1,0 +1,24 @@
+@mixin responsive($device) {
+  @if $device == 'mobile' {
+    @media screen and (max-width: 660px) {
+      @content;
+    }
+  }
+  @if $device == 'tablet' {
+    @media screen and (max-width: 850px) {
+      @content;
+    }
+  } 
+}
+
+@mixin separator {
+  &::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    display: block;
+    background-color: $detail_color;
+    margin: 5px auto 15px auto;
+  } 
+}
+

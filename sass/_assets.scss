@@ -1,0 +1,41 @@
+
+.container {
+  display: block;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  background-color: $detail_color;
+  text-align: center;
+  color: #fff;
+  max-width: 150px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 10px 2px;
+  
+  &--small {
+    max-width: 40px;
+    padding: 5px 8px;
+  } 
+
+  &--large {
+    padding: 12px 20px;
+  }
+
+  &:hover {
+    background-color: lighten($detail_color, 15%);
+    transition: .4s;
+  }
+}
+
+.arrow {
+  position: relative;
+  top: 20px;
+  font-size: 2em;
+  animation: bounceArrow .8s infinite;
+}
+
