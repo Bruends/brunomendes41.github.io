@@ -195,7 +195,7 @@
     color: #fff;
     margin: 15px;
     text-decoration: none;
-    max-width: 60px;    
+    max-width: 70px;    
 
 
     & i {
@@ -238,8 +238,9 @@
 .skill-item {
   flex: 1 450px;
   min-width: 250px;
-  margin: 50px 0;
+  margin: 25px 0;
   text-align: center;  
+  padding: 0 10px;
   padding: 50px; 
   color: #222;
 
@@ -256,7 +257,8 @@
   }
 
   &__text {
-   font-size: 1rem;
+    font-weight: 300;
+   font-size: 1.2rem;
    padding: 15px 0;
   }
 }
