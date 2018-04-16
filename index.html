@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#222222">
   <title>Bruno Mendes</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
   
   <link rel="stylesheet" href="dist/css/style.css">
@@ -67,7 +68,7 @@
       <article class="brief">
         <h2 class="brief__title">Sobre</h2>
         <p class="brief__text">
-          Hey o/, me chamo Bruno Mendes, sou formado em Análise e desenvolvimento de sistemas, onde descobri minha paixão por desenvolvimento web. Hoje foco meus estudos em PHP, NodeJS e React,  &nbsp;mas sempre com mente aberta para novas tecnologias. Atualmente estou à procura de uma oportunidade para iniciar minha carreira e principalmente evoluir a cada dia mais como desenvolvedor!
+          Hey o/, me chamo Bruno Mendes, sou formado em Análise e desenvolvimento de sistemas, onde descobri minha paixão por desenvolvimento web. Hoje foco meus estudos em NodeJS, React e PHP  &nbsp;mas sempre com mente aberta para novas tecnologias. Atualmente estou à procura de uma oportunidade para iniciar minha carreira e principalmente evoluir a cada dia mais como desenvolvedor!
         </p>
       </article>
 
@@ -78,59 +79,74 @@
     </div>
   </section>
 
+  <!-- Links -->
+  <section class="links-bg">
+    <h3 class="links-title">Links</h3>  
+    <div class="links-container">
+      <a href="https://github.com/brunomendes41" class="links-container__item" title="github" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        Github
+      </a>
+      <a href="https://codepen.io/BrunoMendes41/#" class="links-container__item" title="codepen" target="_blank">
+        <i class="fab fa-codepen" aria-hidden="true"></i>
+        Codepen
+      </a>      
+      <a href="dist/docs/BrunoMendesCurriculo.pdf" class="links-container__item" title="curriculo" target="_blank">
+        <i class="far fa-file-pdf" aria-hidden="true"></i>
+        Currículo
+      </a>
+      <a href="https://www.linkedin.com/in/brunomendes41/" class="links-container__item" title="linked in" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        Linkedin
+      </a>
+    </div>
+  </section>
+
   <!-- Skills -->
   <section class="skills-bg bg" id="skills">
     <h2>Skills</h2>
     <div class="skills-container">
-      <div class="skill-item">
-        
-        <h3 class="skill-item__title">
-         Front-End
-        </h3>
-        <ul class="skill-item__list">
-          <li> Javascript </li>
-          <li>HTML</li>
-          <li>CSS, SASS</li>
-          <li>GULP</li>
-          <li> React </li>
-        </ul>
-      </div>
-      <div class="skill-item">
-        
-        <h3 class="skill-item__title">
-          Back-End 
-        </h3>
-        <ul class="skill-item__list">
-          <li> Node </li>
-          <li> PHP </li>
-          <li> Wordpress </li>
-          <li> MySql </li>
-          <li> MongoDB </li>
-        </ul>
+      <div class="skill-row">
+        <article class="skill-item">
+          <i class="fa fa-code skill-item__icon"></i>
+          <h3 class="skill-item__title">Front-End</h3>
+          <p class="skill-item__text">
+            Criação de sites ou user interfaces a partir de um psd, sempre me preocupando com compatibilidade cross-browser e responsividade, caso necessário faço integração com Apis REST ou CMS Wordpress.
+          </p>
+          <!-- icones front-end -->
+          <div class="tech-icons">
+            <i class="fab fa-html5" title="html"></i>
+            <i class="fab fa-css3-alt" title="css"></i>
+            <i class="fab fa-sass" title="sass (scss)"></i>
+            <i class="fab fa-js" title="Javascript"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-gulp" title="gulp"></i>
+          </div>
+        </article>
+        <article class="skill-item">
+          <i class="fa fa-cogs skill-item__icon"></i>
+          <h3 class="skill-item__title">Back-End</h3>
+          <p class="skill-item__text">
+            Criação de Apis RESTful ou sistemas com front-end integrado. Principalmente com as tecnologias: NodeJs, PHP e MySQL.
+          </p>
+          <div class="tech-icons">
+            <!-- icones back-end -->
+            <i class="fab fa-node-js" title="NodeJS"></i>
+            <i class="fab fa-php" title="php"></i>
+            <i class="fab fa-wordpress" title="wordpress"></i>
+            <i class="fa fa-database" title="database"></i>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="contact">
-    <h3>Contato</h3>
-    <div class="social-cotainer">
-      <a href="https://github.com/brunomendes41" title="github" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://codepen.io/BrunoMendes41/#" title="codepen" target="_blank">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-      </a>      
-      <a href="dist/docs/BrunoMendesCurriculo.pdf" title="curriculo" target="_blank">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/brunomendes41/" title="linked in" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-    </div>
+    <h3>Contato</h3>    
     <p>Email: brunomendes962@gmail.com</p>
-    <small>Desenvolvido por Bruno Mendes</small>
-  </footer>
+    <small>&copy; Bruno Mendes</small>
+  </footer> 
   <script src="dist/js/dist.js"></script>
 </body>
 </html>

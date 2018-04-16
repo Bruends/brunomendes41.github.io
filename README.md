@@ -1,5 +1,2 @@
-
-## wireframe de portfolio simples 
-html, css(sass) e javascript, sem frameworks
-
-![portfolio demo](portfoliodemo.gif)
+## site pessoal
+acesse [clicando aqui](https://brunomendes41.github.io/)
