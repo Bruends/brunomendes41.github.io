@@ -22,9 +22,12 @@ const toggleMenu = () => {
 };
 
 const closeMenu = () => {
+  const menuIcon = document.querySelector('#toggle-menu > i');
+
   const menu = document.querySelector('.menu');
   menu.classList.remove('menu--active');
-  changeToggleButtonIcon();
+  menuIcon.classList.remove('fa-times');
+  menuIcon.classList.add('fa-bars');
 }
 
 // listener botão de toggle do menu
