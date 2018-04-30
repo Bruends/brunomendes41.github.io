@@ -47,6 +47,17 @@
   .menu--active {
     display: block;      
   } 
+
+  .skill-placeholder{
+    display: none;
+  }
+  .skills-bg {
+    background-image: none;
+  }
+
+  .skill-item {
+    padding: 100px 10px;
+  }
 }
 
 @include responsive('mobile') {
@@ -60,10 +71,13 @@
   
   .brief-text {
     font-size: .9rem;
-  }
+  } 
 
-  .portfolio-bg {
-    background-image: none;    
+  .skill-placeholder{
+    display: none;
+  }
+  .skills-bg {
+    background-image: none;
   }
 
 }
