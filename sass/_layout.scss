@@ -160,7 +160,7 @@
     border-radius: 50%;
     background-image: url('../img/photo.jpg');
     background-size: cover;   
-    background-position: left top;
+    background-position: left top;    
   }
 
   &__contact {
@@ -178,14 +178,14 @@
   text-align: center;
   background-image: url('../img/phrasebg.jpeg'); 
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   color: #fff;
 }
 .phrase {
   font-size: 2rem;
 }
-.author {
-  margin-top: 5px;
+.author {  
   font-size: 1.1rem;
 }
 
@@ -194,7 +194,7 @@
   padding: 30px;
   background:  #111;  
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover;  
 }
 
 .links-title {
@@ -241,9 +241,11 @@
 // SKILLS
 .skills-bg{     
   position: relative; 
-  background: url('../img/skillsbg.jpg');
+  background-color: rgb(26, 26, 26);
+  background-image: url('../img/skillsbg.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   padding: 80px 0;
 }

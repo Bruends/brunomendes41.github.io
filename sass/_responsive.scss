@@ -1,7 +1,7 @@
 @include responsive('tablet'){  
   .header-container {
     justify-content: space-between;
-    background-color: #222;
+    background-color: #111;
     
     & * {
       color: #fff;
@@ -16,8 +16,8 @@
   .menu {      
     display: none;
     position: absolute;
-    flex-direction: column;
-    background-color: #222;
+    flex-direction: column;    
+    background-color: #111;
     width: 100%;
     top: 84px;
     left: 0px;
@@ -72,5 +72,10 @@
 
   .phrase-bg { 
     padding: 20px 10px;
+  }
+
+  .skills-bg {
+    background-image: none;
+    background-color: rgb(26, 26, 26);
   }
 }
