@@ -50,10 +50,7 @@
 
   .skill-placeholder{
     display: none;
-  }
-  .skills-bg {
-    background-image: none;
-  }
+  } 
 
   .skill-item {
     padding: 100px 10px;
@@ -71,13 +68,9 @@
   
   .brief-text {
     font-size: .9rem;
-  } 
-
-  .skill-placeholder{
-    display: none;
-  }
-  .skills-bg {
-    background-image: none;
   }
 
+  .phrase-bg { 
+    padding: 20px 10px;
+  }
 }

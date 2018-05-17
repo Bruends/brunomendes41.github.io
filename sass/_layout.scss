@@ -9,7 +9,7 @@
 
 // quando o header for fixado com scroll
 .header-bg--fixed {
-  background-color: #222;
+  background-color: #111;
   position: fixed;
   top: 0;
   border-bottom: 2px solid $detail_color;
@@ -115,6 +115,10 @@
 }
 
 // SOBRE
+.about-bg {
+  background-color: #111;
+}
+
 .about-container {   
   display: flex;
   position: relative;
@@ -122,7 +126,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 180px 0px;  
+  padding: 150px 0px;  
 }
 
 .brief {
@@ -132,10 +136,11 @@
 
   &__title {
     @include separator;
-    color: #333;
+    color: #fff;
   }
 
   &__text {
+    color: #fff;
     font-size: 1.1em;
     line-height: 1.5em;
     padding: 0 10px;
@@ -167,10 +172,29 @@
   }
 }
 
+// Frase
+.phrase-bg {  
+  padding: 80px;
+  text-align: center;
+  background-image: url('../img/phrasebg.jpeg'); 
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+.phrase {
+  font-size: 2rem;
+}
+.author {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
 // LINKS
 .links-bg {  
   padding: 30px;
-  background-color: #222;  
+  background:  #111;  
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .links-title {
@@ -215,34 +239,33 @@
 }
 
 // SKILLS
-.skills-bg{
-  background-color: #fff;    
+.skills-bg{     
   position: relative; 
   background: url('../img/skillsbg.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 80px 0;
 }
 
 .skills-bg h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;  
+  padding: 20px;
+  color: #fff;  
   @include separator;  
 }
 
-.skill-row {
+.skills-row {
   display: flex;
   flex-wrap: wrap;   
 }
 
-.skill-item {  
-  background-color: #fff;
-  color: #222;  
+.skill-item {    
+  color: #fff;  
   position: relative;  
   flex: 1 400px;
   text-align: center;  
-  padding: 250px 10px; 
+  padding: 80px 10px; 
 
   &__icon {
     color: $detail-color;    
@@ -252,7 +275,7 @@
    &__title {        
     font-size: 1.2rem; 
     margin: 10px 0;
-    color: $detail-color;
+    color: #fff;
     @include separator;
   }
 
@@ -273,10 +296,10 @@
 .tech-icons i {
   font-size: 1.6rem;
   margin: 10px 3px;
-  
+  color: $detail-color;  
 
   &:hover {    
-    color: $detail-color;
+    color: #fff;
     animation: rotate 1s;
     transition: .2s;    
   }
