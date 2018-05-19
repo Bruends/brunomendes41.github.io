@@ -209,23 +209,24 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  padding: 15px 0;
   width: 100%;  
   
   &__item{   
-    width: 120px;   
+    width: 120px;  
+    min-width: 40px; 
     position: relative;
     display: block;
     text-align: center;
     color: #fff;
     margin: 15px;
     text-decoration: none;    
-    padding: 20px;
+    padding: 10px;
 
     & i {      
       display: block;
       font-size: 1.8em;
-      margin: 5px 0;
+      margin: 5px auto;
       margin-bottom: 10px;
     }
     &:hover {
@@ -267,7 +268,7 @@
   position: relative;  
   flex: 1 400px;
   text-align: center;  
-  padding: 80px 10px; 
+  padding: 60px 10px; 
 
   &__icon {
     color: $detail-color;    

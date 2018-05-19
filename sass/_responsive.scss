@@ -71,11 +71,23 @@
   }
 
   .phrase-bg { 
-    padding: 20px 10px;
+    padding: 50px 10px;
+  }
+  .phrase {
+    font-size: 1.3rem;
+  }
+
+  .links-bg {
+    padding: 10px;
+  }
+
+  .links-container__item {
+    flex: 1 80px;
   }
 
   .skills-bg {
     background-image: none;
     background-color: rgb(26, 26, 26);
   }
+
 }
