@@ -142,7 +142,8 @@
   &__text {
     color: #fff;
     font-size: 1.1em;
-    line-height: 1.5em;
+    font-weight: 300;
+    line-height: 1.6em;
     padding: 0 10px;
   }
 }
@@ -155,11 +156,11 @@
   &__photo {    
     display: block;
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-image: url('../img/photo.jpg');
-    background-size: cover;   
+    background-size: cover;
     background-position: left top;    
   }
 
