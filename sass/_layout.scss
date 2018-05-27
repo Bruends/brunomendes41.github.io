@@ -177,7 +177,7 @@
 .phrase-bg {  
   padding: 80px;
   text-align: center;
-  background-image: url('../img/phrasebg.jpeg'); 
+  background-image: url('../img/phrase-bg.jpeg'); 
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -194,8 +194,7 @@
 .links-bg {  
   padding: 30px;
   background:  #111;  
-  background-attachment: fixed;
-  background-size: cover;  
+  margin: 0;  
 }
 
 .links-title {
@@ -244,7 +243,7 @@
 .skills-bg{     
   position: relative; 
   background-color: rgb(26, 26, 26);
-  background-image: url('../img/skillsbg.jpg');
+  background-image: url('../img/skills-bg.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
