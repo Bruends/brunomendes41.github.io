@@ -1,0 +1,11 @@
+footer{
+  padding: 50px 0;  
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+    
+  h3{
+    text-align: center;
+    @include separator;
+  }  
+}

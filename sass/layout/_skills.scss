@@ -1,0 +1,82 @@
+// SKILLS
+.skills-bg{     
+  position: relative; 
+  background-color: rgb(26, 26, 26);
+  background-image: url('../img/skills-bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.skills-bg h2 {
+  text-align: center;
+  padding: 20px;
+  color: #fff;  
+  @include separator;  
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;   
+}
+
+.skill-item {    
+  color: #fff;  
+  position: relative;  
+  flex: 1 400px;
+  text-align: center;  
+  padding: 60px 10px; 
+
+  &__icon {
+    color: $detail-color;    
+    font-size: 2.1rem;
+  }
+
+   &__title {        
+    font-size: 1.2rem; 
+    margin: 10px 0;
+    color: #fff;
+    @include separator;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    max-width: 320px;
+  }
+}
+
+.skill-placeholder {
+  flex: 1 400px;
+} 
+
+.tech-icons i {
+  font-size: 1.6rem;
+  margin: 10px 3px;
+  color: $detail-color;  
+
+  &:hover {    
+    color: #fff;
+    animation: rotate 1s;
+    transition: .2s;    
+  }
+}
+
+// RESPONSIVO
+@include responsive('tablet'){  
+  .skill-item {
+    padding: 100px 10px;
+  }
+}
+
+@include responsive('mobile') {  
+  .skills-bg {
+    background-image: none;
+    background-color: rgb(26, 26, 26);
+  }
+}

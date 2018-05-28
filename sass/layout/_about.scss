@@ -1,0 +1,58 @@
+// SOBRE
+.about-bg {
+  background-color: #111;
+}
+
+.about-container {   
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0px;  
+}
+
+.brief {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    @include separator;
+    color: #fff;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 0 10px;
+  }
+}
+
+.info {
+  max-width: 400px;
+  min-width: 300px; 
+  margin-top: 35px;
+
+  &__photo {    
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../img/photo.jpg');
+    background-size: cover;
+    background-position: left top;    
+  }
+
+  &__contact {
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

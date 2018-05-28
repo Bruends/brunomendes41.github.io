@@ -1,0 +1,50 @@
+// BANNER
+.banner {
+  position: relative;
+  height: 650px;
+  background-color: #222;
+  background-image: url('../img/banner.jpeg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 150px;
+  padding: 20px;
+
+  &__logo{
+    margin: 0 auto;
+    @include separator;    
+  } 
+
+  &__logo-img {
+    width: 100px;    
+    margin-bottom: 20px;
+    animation: fadeInRotate 2s;
+  }
+
+  &__title {
+    font-size: 4em;    
+    animation: fadeInUp 1s;
+  }
+
+  &__subtitle {
+    font-size: 1.8em;
+    animation: fadeInUp 1s;
+  }
+}
+
+//RESPONSIVO
+@include responsive('mobile') {
+  .banner-content {
+    top: 120px;
+
+    &__title {
+      font-size: 2.6em;
+    }
+  }
+}
