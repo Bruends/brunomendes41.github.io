@@ -1,24 +1,26 @@
 // Frase
-.phrase-bg {  
-  padding: 80px;
-  text-align: center;
-  background-image: url('../img/phrase-bg.jpeg'); 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-}
-.phrase {
-  font-size: 2rem;
-}
-.author {  
-  font-size: 1.1rem;
-}
+// .phrase-bg {  
+//   padding: 80px;
+//   text-align: center;   
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-size: cover;
+//   color: #fff;
+// }
+// .phrase {
+//   font-size: 2rem;
+// }
+// .author {  
+//   font-size: 1.1rem;
+// }
 
 // LINKS
 .links-bg {  
   padding: 30px;
-  background:  #111;  
+  background-image: url('../img/phrase-bg.jpeg'); 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   margin: 0;  
 }
 
@@ -66,20 +68,8 @@
 
 //RESPONSIVO
 @include responsive('mobile') {  
-  .brief__text {
-    font-size: .9rem;
-    line-height: 1.25rem;
-  }
-
-  .phrase-bg { 
-    padding: 50px 10px;
-  }
-  .phrase {
-    font-size: 1.3rem;
-  }
-
   .links-bg {
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   .links-container__item {

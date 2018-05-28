@@ -14,28 +14,40 @@
   color: #fff;
   position: relative;
   top: 150px;
-  padding: 20px;
+  padding: 20px;  
+  margin: 0 auto; 
 
   &__logo{
     margin: 0 auto;
     @include separator;    
   } 
 
-  &__logo-img {
-    width: 100px;    
+  &__logo-img {        
+    width: 80px;
+    height: 88px;
     margin-bottom: 20px;
     animation: fadeInRotate 2s;
   }
 
   &__title {
-    font-size: 4em;    
+    font-size: 3.2rem;    
     animation: fadeInUp 1s;
+    font-weight: normal;
   }
 
   &__subtitle {
-    font-size: 1.8em;
+    font-size: 1.4rem;
+    font-weight: normal;
     animation: fadeInUp 1s;
   }
+}
+
+.arrow {
+  position: relative;
+  top: 80px;
+  font-size: 2em;
+  animation: bounceArrow .8s infinite;
+  color: #fff;
 }
 
 //RESPONSIVO

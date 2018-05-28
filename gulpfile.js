@@ -44,7 +44,7 @@ gulp.task('browser-sync', () => {
     }
   });
 
-  gulp.watch(['./sass/*.scss', './js/*.js'], ['sass', 'js', 'bs-reload']); 
+  gulp.watch(['./sass/*.scss', './sass/layout/*.scss','./js/*.js'], ['sass', 'js', 'bs-reload']); 
 });
 
 // browser-sync server:  http://localhost:3000

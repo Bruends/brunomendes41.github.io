@@ -1,6 +1,6 @@
 // SOBRE
 .about-bg {
-  background-color: #111;
+  background-color: #fff;
 }
 
 .about-container {   
@@ -20,12 +20,13 @@
 
   &__title {
     @include separator;
-    color: #fff;
+    margin-bottom: 30px;
+    color: #222;
   }
 
   &__text {
-    color: #fff;
-    font-size: 1.1em;
+    color: #222;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.6em;
     padding: 0 10px;
@@ -55,4 +56,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+@include responsive('mobile') {  
+  .brief__text {      
+    padding: 15px;
+    line-height: 1.25rem;
+  } 
 }

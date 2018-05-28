@@ -1,8 +1,6 @@
 // SKILLS
 .skills-bg{     
-  position: relative; 
-  background-color: rgb(26, 26, 26);
-  background-image: url('../img/skills-bg.jpg');
+  position: relative;  
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,7 +11,7 @@
 .skills-bg h2 {
   text-align: center;
   padding: 20px;
-  color: #fff;  
+  color: #222;  
   @include separator;  
 }
 
@@ -23,21 +21,25 @@
 }
 
 .skill-item {    
-  color: #fff;  
+  color: #333;   
   position: relative;  
   flex: 1 400px;
   text-align: center;  
   padding: 60px 10px; 
 
-  &__icon {
-    color: $detail-color;    
-    font-size: 2.1rem;
+  &__icon {      
+    font-size: 1.8rem;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: $detail-color;
+    color: #fff;
   }
 
    &__title {        
     font-size: 1.2rem; 
     margin: 10px 0;
-    color: #fff;
+    color: #222;
     @include separator;
   }
 
@@ -70,13 +72,6 @@
 // RESPONSIVO
 @include responsive('tablet'){  
   .skill-item {
-    padding: 100px 10px;
-  }
-}
-
-@include responsive('mobile') {  
-  .skills-bg {
-    background-image: none;
-    background-color: rgb(26, 26, 26);
+    padding: 40px 10px;
   }
 }
